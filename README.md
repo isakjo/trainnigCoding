@@ -1,3 +1,3 @@
-# trainnig language
+# Let's trainnig Coding ~ hahaha
 
-i study C , C++ , Python
+C C++ Python

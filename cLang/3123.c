@@ -5,7 +5,7 @@
 
 int displayMenu(void);
 void menu1(void);
-void menu2(void);
+void menu2(int dollor);
 void menu3(void);
 void prompt(int, int);
 
@@ -13,8 +13,12 @@ void prompt(int, int);
 //void menu2next(void);
 void menu3next(int k);
 void inputdollor(int k);
-int dollor;
+
+
+
 int k;
+int dollor;
+
 int main(void)
 {
 	int select;
@@ -71,7 +75,7 @@ void menu1(void)
 }
 
 // menu2
-void menu2(void)
+void menu2(int dollor)
 {
 	system("cls");
 	prompt(3, 7); printf("나의 예상 수익율 확인(%d 원 입금 기준)",dollor);
@@ -87,7 +91,7 @@ void menu2(void)
 void menu3(void)
 {
 //	char ch;
-	int k;
+//	int k;
 	
 //	while(((ch = getchar()) != '\n' && ch != EOF)){
 		
@@ -98,12 +102,14 @@ void menu3(void)
 		scanf("%d",&k);
 //		if(ch = '\n'){
 		return menu3next(k);
+		
 //		}
 }
 
 
 void menu3next(int k){
 	char ch3n;
+
 
 	system("cls");
 	prompt(30, 5); printf("계약금액 %d 원",k);

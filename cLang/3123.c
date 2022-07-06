@@ -75,24 +75,32 @@ void menu3(void)
 {
 	char ch;
 	
-	while()
-	system("cls");
-	prompt(30, 7); printf(" 원하시는 예금 액수를 입력하세요:");
-	fflush(stdin);
-	ch=getchar();
+	while(((ch = getchar()) != '\n' && ch != EOF)){
+		
+		system("cls");
+		prompt(30, 7); printf(" 원하시는 예금 액수를 입력하세요:");
+		fflush(stdin);
+		ch=getchar();
+	}
+	return menu3next(ch):
 	
 	
 }
 
 void menu3next(void)
-	do
-        {
-            printf("입력하신 금액이 맞습니까(Y/N)? ");
-
-            scanf("%c", &repeat);
-            repeat = toupper(repeat);
-            if (repeat != 'Y' && repeat != 'N')         
-                printf("Invalid answer. Please enter 'Y' or 'N'.\n\n");
-            fflush(stdin);               //*why is this required?*               
-
-        } while (repeat != 'N' && repeat != 'Y');
+{	
+	char answer;
+	
+	while((( answer = getch()) != 'y' && answer = getch()) != 'n' ))){
+		
+		printf("\nWould you like to play? Enter Y or N: \n", answer);
+		system("cls");
+		prompt(30, 7); printf("계약금액");
+		prompt(20, 20); printf("입력하신 내용이 맞습니까?");
+		fflush(stdin);
+		answer = getchar();
+	}
+	return getch;
+	
+	
+	

@@ -73,8 +73,26 @@ void menu2(void)
 // menu3
 void menu3(void)
 {
+	char ch;
+	
+	while()
 	system("cls");
 	prompt(30, 7); printf(" 원하시는 예금 액수를 입력하세요:");
-	prompt(20, 20); printf("# 아무키나 입력하면 메인 메뉴로 돌아갑니다");
-	getch();
+	fflush(stdin);
+	ch=getchar();
+	
+	
 }
+
+void menu3next(void)
+	do
+        {
+            printf("입력하신 금액이 맞습니까(Y/N)? ");
+
+            scanf("%c", &repeat);
+            repeat = toupper(repeat);
+            if (repeat != 'Y' && repeat != 'N')         
+                printf("Invalid answer. Please enter 'Y' or 'N'.\n\n");
+            fflush(stdin);               //*why is this required?*               
+
+        } while (repeat != 'N' && repeat != 'Y');
